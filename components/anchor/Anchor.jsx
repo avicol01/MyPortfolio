@@ -19,7 +19,7 @@ function AnchorIcon({children, icon, className}) {
 }
 
 function AnchorLabel({children, className}) {
-	return <span className={cn('text-blue-500 font-semibold', className)}>{children}</span>
+	return <span className={cn( className)}>{children}</span>
 }
 
 export {Anchor, AnchorContent, AnchorIcon, AnchorLabel}

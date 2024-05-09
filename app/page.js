@@ -1,19 +1,23 @@
+import Link from 'next/link';
+import {Anchor, AnchorLabel} from '@/components/anchor/Anchor'
+
+
 export default async function Home() {
 	return (
 		<>
 			<div className="grid lg:grid-cols-2">
-				<header className="lg:sticky top-0 py-20 px-10 grid-cols-1 my-auto h-screen">
+				<header className="lg:sticky top-0 py-20 px-10 grid-cols-1 h-screen">
 					<div className="font-sans font-semibold border
 				border-sky-950/90 rounded-lg shadow-xl p-10 ">
 						<h1 className="text-5xl hover:font-mono tracking-widest text-slate-200">
 							Andreea Vicol</h1>
 						<h2 className="text-3xl py-4 tracking-wide text-slate-300">Junior Software Developer</h2>
-						<p className="text-slate-400 md:mr-3">A couple line about me. let me add some filler text too see how
-							the spacing works and looks.</p>
-							<ul className="p-10 text-slate-400 ">
-								<li className="py-6 hover:text-slate-200">Introduction</li>
-								<li className="py-6 hover:text-slate-200">My Projects</li>
-							</ul>
+						<p className="text-slate-400 md:mr-3 text-base py-3">In a world of continuous change, to thrive to learn and
+							grow is a necessity on the path to success.</p>
+						<ul className="p-10 text-slate-400 text-xs uppercase tracking-widest">
+							<li className="py-6 nav-text  hover:text-slate-200 hover:font-bold">Introduction</li>
+							<li className="py-6 nav-text  hover:text-slate-200 hover:font-bold">My Projects</li>
+						</ul>
 						<ul className="text-slate-400 my-[3rem] flex">
 							<li className="pr-6">
 								<a className="block hover:text-slate-200" href="https://ca.linkedin.com/in/andreea-vicol-bb1706228" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn (opens in a new tab)" title="LinkedIn"><span className="sr-only">LinkedIn</span>
@@ -28,13 +32,49 @@ export default async function Home() {
 						</ul>
 					</div>
 				</header>
-				<main className="px-10 py-10">
-					<div className="text-slate-300 text-lg">
-						<p className="pt-10 ">I got into software developing by coming across a YouTube video back in 2020 and I immediately knew my next career. My background is in banking. </p>
-						<p className="pt-10 ">I'm on track to graduate from NAIT in December 2024 with a degree in Digital Media and IT - Computer Software Development Concentration. My passion
-							lies in C# .NET Core, and I've grounded my skills in this programming language and framework throughout my studies. I have worked with blazor web application.  </p>
+				<main className="py-10">
+					<div className="text-slate-300/90 text-lg px-10">
+						<h2 className="text-3xl mt-14 tracking-wider font-sans font-semibold">Introduction</h2>
+						<p className="pt-10">Welcome to my Portfolio. Here you can find my story.</p>
+						<p className="pt-5">
+							I will complete my degree in Digital Media and IT - Computer Software Development Concentration
+							from Northern Alberta Institute of Technology (NAIT) in December 2024. My passion lies in C#, and I've grounded
+							my skills in this programming language and framework throughout my studies. I have worked with Blazor web application.
+							As shown by my project Transaction System. Additionally, I've expanded my skill set by acquiring basic proficiency in
+							JavaScript and familiarity with Java. In terms of design, I am experienced in CSS and have utilized frameworks like
+							Tailwind and Bootstrap to create visually appealing and responsive UI. I have a solid understanding of database management,
+							with experience in SQL and Linqpad.</p>
+						<p className="pt-5 ">I got into software developing by coming across a YouTube video back in 2020 and I immediately knew my next career. My background is in banking. </p>
 					</div>
-					
+					{/* projects*/}
+					<div className="text-slate-300/90 mt-[8rem] px-5">
+						<h2 className="text-3xl mt-14 tracking-wider font-sans font-semibold px-5">My Projects</h2>
+							<Anchor
+								href="/demo">
+								<AnchorLabel>
+								<div className="borderborder-sky-950/90 rounded-lg shadow-xl py-10 px-5 my-5
+									  hover:bg-sky-200/5 hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] hover:drop-shadow-lg">
+								<h3 className="text-xl text-blue-300 mb-5 tracking-wider "> Transaction System</h3>
+								<p className="text-md">In this project, I implemented a transaction system where employees can input customer purchases. This system updates the database with the relevant information, ensuring accurate and real-time tracking of transactions. </p>
+								<ul className="flex mt-5 text-blue-300">
+									<li>
+										<div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-s font-medium leading-5 mr-5 ">C#</div>
+									</li>
+									<li>
+										<div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-s font-medium leading-5 mr-5 ">Blazor</div>
+									</li>
+									<li>
+										<div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-s font-medium leading-5 mr-5 ">Bootstrap</div>
+									</li>
+									<li>
+										<div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-s font-medium leading-5 mr-5 ">LinqPad 8</div>
+									</li>
+								</ul>
+							</div>
+								</AnchorLabel>
+							</Anchor>
+
+					</div>
 				</main>
 			</div>
 		</>

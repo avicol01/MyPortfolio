@@ -13,7 +13,7 @@ export default function RootLayout({children}) {
 	return (
 		<html lang="en">
 			{/* <link rel="icon" href="/svg/favicon.svg" type="image/svg+xml" /> */}
-			<body className="bg-sky-950/90">
+			<body className="bg-blue-950/95">
 				{/* <NavBar /> */}
 				{children}
 				<Toaster

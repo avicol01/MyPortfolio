@@ -1,27 +1,42 @@
-import {ToDoList} from '@/components/todos/ToDoList'
-import {AddTask} from '@/components/dialogs/AddTask'
-import {ToDoListItem} from '@/components/todos/ToDoListItem'
+import { Anchor, AnchorLabel } from '@/components/anchor/Anchor'
+import React from 'react';
+import { Carousel } from "flowbite-react";
 
-import {getToDoItems} from '@/lib/firebase/api'
+async function DemoPage({ children }) {
 
-async function DemoPage({children}) {
-
-	const payload = await getToDoItems()
-	const tasks = Object.entries(payload.todos).reverse()
+	// const payload = await getToDoItems()
+	// const tasks = Object.entries(payload.todos).reverse()
 
 	return (
 		<>
-			<header className="text-center pt-28">
-				<h2 className="text-5xl text-slate-900">Demo Page Component </h2>
+			<header className="mt-10 ml-5">
+
+
+				<h2 className="text-5xl text-slate-900">Transaction System </h2>
 			</header>
 			<main className=" max-w-md mx-auto  py-24">
-				<ToDoList className=" space-y-4 p-4 h-[478px] max-h-[478px] overflow-y-scroll shadow-sm rounded-md border border-neutral-200">
-					{tasks.map((task) => (
-						<ToDoListItem key={task[0]} payload={task[1]} uid={task[0]} />
-					))}
-				</ToDoList>
-				<AddTask />
+				<div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
+					<Carousel>
+						<div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+							Slide 1
+						</div>
+						<div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+							Slide 2
+						</div>
+						<div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
+							Slide 3
+						</div>
+					</Carousel>
+				</div>
 			</main>
+			<footer>
+				<Anchor href="/">
+					<AnchorLabel className="text-xl font-sans hover:font-mono text-slate-200">
+						back to main page
+					</AnchorLabel>
+				</Anchor>
+			</footer>
+
 		</>
 	)
 }
