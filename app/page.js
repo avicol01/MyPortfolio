@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import {Anchor, AnchorLabel} from '@/components/anchor/Anchor'
 
 
@@ -70,11 +71,13 @@ export default async function Home() {
 										<div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-s font-medium leading-5 mr-5 ">LinqPad 8</div>
 									</li>
 								</ul>
+								
 							</div>
 								</AnchorLabel>
 							</Anchor>
 
 					</div>
+					
 				</main>
 			</div>
 		</>
