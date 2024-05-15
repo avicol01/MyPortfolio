@@ -5,7 +5,7 @@ import '@/css/globals.css'
 
 export const metadata = {
 	title: 'Andreea Vicol',
-	description: 'Best to do list of the year in DMIT',
+	description: 'My Portfolio',
 }
 
 export default function RootLayout({children}) {
