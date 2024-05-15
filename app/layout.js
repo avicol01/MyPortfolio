@@ -1,6 +1,5 @@
 import {Toaster} from '@/components/ui/sonner'
 
-import {NavBar} from '@/components/navbar/NavBar'
 
 import '@/css/globals.css'
 
@@ -12,9 +11,7 @@ export const metadata = {
 export default function RootLayout({children}) {
 	return (
 		<html lang="en">
-			{/* <link rel="icon" href="/svg/favicon.svg" type="image/svg+xml" /> */}
-			<body className="bg-blue-950/95">
-				{/* <NavBar /> */}
+			<body className="bg-sky-100/30">
 				{children}
 				<Toaster
 					position="top-center"
