@@ -1,28 +1,29 @@
 import Link from 'next/link';
 import { Anchor, AnchorLabel } from '@/components/anchor/Anchor'
-
-const introSectionId = 'intro-section';
-const projectsSectionId = 'projects-section';
+import Image from "next/image";
+import logo from "/images/AVogT.png";
 
 export default async function Home() {
 	return (
 		<>
-			{/* <body className="bg-blue-950/95"> */}
 			<div className="grid lg:grid-cols-2 container mx-auto max-w-screen-xl">
-				<header className="lg:sticky top-0 p-10 grid-cols-1 lg:h-screen">
-					<div className="font-sans font-semibold border
-				border-sky-800/30 rounded-lg shadow-xl p-10 ">
-						<h1 className="text-5xl hover:font-mono tracking-widest text-slate-700">
-							Andreea Vicol</h1>
+				<header className="lg:sticky top-0 p-10 grid-cols-1 lg:h-screen flex lg:items-center lg:justify-center">
+					<div className="font-sans font-semibold bg-sky-400/10 border
+				 rounded-lg shadow-xl p-10 ">
+						<h className="text-5xl hover:font-mono tracking-widest text-slate-700">
+							Andreea Vicol</h>
 						<h2 className="text-3xl py-4 tracking-wide text-slate-600">Junior Software Developer</h2>
 						<p className="text-slate-600 md:mr-3 text-base py-3">In a world of continuous change, to thrive to learn and
 							grow is a necessity on the path to success.</p>
-						<ul className="p-10 text-slate-600 text-xs uppercase tracking-widest">
+						<ul className="p-8 text-slate-600 text-sm uppercase tracking-widest">
 							<li className="py-6 nav-text underline underline-offset-4 hover:text-slate-700 hover:font-bold">
 								<a href="#intro" className="">Introduction</a>
 							</li>
 							<li className="py-6 nav-text underline underline-offset-4 hover:text-slate-700 hover:font-bold">
-							<a href="#project" className="">My Projects</a>
+								<a href="#project" className="">My Projects</a>
+							</li>
+							<li className="py-6 nav-text underline underline-offset-4 hover:text-slate-700 hover:font-bold">
+								<a href="#project" className="">My Skills</a>
 							</li>
 						</ul>
 						<ul className="text-slate-500 my-[3rem] flex">
@@ -39,37 +40,48 @@ export default async function Home() {
 						</ul>
 					</div>
 				</header>
-				<main className="">
-					<div id="intro" className="text-slate-700/90 text-lg px-10">
-						<h2 className="text-3xl mt-14 tracking-wider font-sans font-semibold">Introduction</h2>
-						<p className="pt-10 text-sky-700 font-medium">Welcome to my Portfolio. Here you can find my story.</p>
-						<p className="text-base pt-5">
-							I will complete my diploma in Digital Media and IT - Computer Software Development Concentration
-							from Northern Alberta Institute of Technology (NAIT) in December 2024. My passion lies in C#, and I've grounded
-							my skills in this programming language and framework throughout my studies. I have worked with Blazor web application.
-							As shown by my project Transaction System. Additionally, I've expanded my skill set by acquiring basic proficiency in
-							JavaScript and familiarity with Java. In terms of design, I am experienced in CSS and have utilized frameworks like
-							Tailwind and Bootstrap to create visually appealing and responsive UI. I have a solid understanding of database management,
-							with experience in SQL and Linqpad.</p>
-						<p className="text-base pt-5 pb-2">In my previous career, I work in banking, with my last role being a Financial Advisor. I held various positions over time, each contributing to my diverse skill set. Those roles helped me accumulated diverse skills: 
-						</p>
-						<ul  className="text-base list-disc pl-8 pb-2">
-							<li>Develop team effectiveness</li>
-							<li>Analytical thinking</li>
-							<li>Attention to details</li>
-							<li>Strong communication skills</li>
-						</ul> 
-						<p className="text-base"><span className="italic ">Then, I discovered my passion for coding and inspired me to return to school and pursue this new path.</span>		
-						My prior experience has equipped me with invaluable skills that I believe are transferable to the field of software development.</p>
+				<main >
+					<div className="relative flex justify-end">
+						<Anchor
+							href="/">
+							<Image className="absolute top-0 right-0 mr-10 mt-5"
+								src={logo}
+								alt="logo"
+								width={100}
+								height={100}
+							/>
+						</Anchor>
+						<div id="intro" className="text-slate-700/90 text-lg px-10">
+							<h2 className="text-3xl mt-14 tracking-wider font-sans font-semibold">Introduction</h2>
+							<p className="pt-10 text-sky-700 font-medium">Welcome to my Portfolio. Here you can find my story.</p>
+							<p className="text-base pt-5">
+								I will complete my diploma in Digital Media and IT - Computer Software Development Concentration
+								from Northern Alberta Institute of Technology (NAIT) in December 2024. My passion lies in C#, and I've grounded
+								my skills in this programming language and framework throughout my studies. I have worked with Blazor web application.
+								As shown by my project Transaction System. Additionally, I've expanded my skill set by acquiring basic proficiency in
+								JavaScript and familiarity with Java. In terms of design, I am experienced in CSS and have utilized frameworks like
+								Tailwind and Bootstrap to create visually appealing and responsive UI. I have a solid understanding of database management,
+								with experience in SQL and Linqpad.</p>
+							<p className="text-base pt-5 pb-2">In my previous career, I work in banking, with my last role being a Financial Advisor. I held various positions over time, each contributing to my diverse skill set. Those roles helped me accumulated diverse skills:
+							</p>
+							<ul className="text-base list-disc pl-8 pb-2">
+								<li>Develop team effectiveness</li>
+								<li>Analytical thinking</li>
+								<li>Attention to details</li>
+								<li>Strong communication skills</li>
+							</ul>
+							<p className="text-base"><span className="italic ">Then, I discovered my passion for coding and inspired me to return to school and pursue this new path.</span>
+								My prior experience has equipped me with invaluable skills that I believe are transferable to the field of software development.</p>
+						</div>
 					</div>
 					{/* projects*/}
-					<div className="text-slate-600/90 mt-[8rem] px-5">
+					<div className="text-slate-600/90 mt-[4rem] px-5">
 						<h2 id="project" className="text-3xl mt-14 tracking-wider font-sans font-semibold px-5">My Projects</h2>
 						<Anchor
 							href="/demo">
 							<AnchorLabel>
-								<div className="borderborder-sky-950/90 rounded-lg shadow-xl py-10 px-5 my-5
-									  hover:bg-sky-300/15 hover:drop-shadow-lg">
+								<div className="border border-sky-950/10 rounded-lg shadow-xl py-10 px-5 my-5
+									  bg-sky-300/15 hover:bg-sky-400/15 hover:drop-shadow-2xl">
 									<h3 className="text-xl text-blue-600 tracking-wider font-semibold mb-5"> Transaction System</h3>
 									<p className="text-md">In this project, I implemented a transaction system where employees can input customer purchases. This system updates the database with the relevant information, ensuring accurate and real-time tracking of transactions. </p>
 									<ul className="flex mt-5 text-blue-600">
@@ -92,6 +104,7 @@ export default async function Home() {
 						</Anchor>
 
 					</div>
+
 
 				</main>
 			</div>
