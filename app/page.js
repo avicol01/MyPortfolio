@@ -62,15 +62,15 @@ export default async function Home() {
 								JavaScript and familiarity with Java. In terms of design, I am experienced in CSS and have utilized frameworks like
 								Tailwind and Bootstrap to create visually appealing and responsive UI. I have a solid understanding of database management,
 								with experience in SQL and Linqpad.</p>
-							<p className="text-base pt-5 pb-2">In my previous career, I work in banking, with my last role being a Financial Advisor. I held various positions over time, each contributing to my diverse skill set. Those roles helped me accumulated diverse skills:
+							<p className="text-base pt-5 pb-2">In my previous career, I worked in banking, with my last role being a Financial Advisor. I held various positions over time, each contributing to my diverse skill set. Those roles helped me accumulate the following skills:
 							</p>
 							<ul className="text-base list-disc pl-8 pb-2">
 								<li>Develop team effectiveness</li>
 								<li>Analytical thinking</li>
-								<li>Attention to details</li>
-								<li>Strong communication skills</li>
+								<li>Attentiveness to details</li>
+								<li>Effective communication skills</li>
 							</ul>
-							<p className="text-base"><span className="italic ">Then, I discovered my passion for coding and inspired me to return to school and pursue this new path.</span>
+							<p className="text-base"><span className="italic ">Then, I discovered my passion for coding and inspired me to return to school and pursue this new path. </span>
 								My prior experience has equipped me with invaluable skills that I believe are transferable to the field of software development.</p>
 						</div>
 					</div>
@@ -82,7 +82,7 @@ export default async function Home() {
 							<AnchorLabel>
 								<div className="border border-sky-950/10 rounded-lg shadow-xl py-10 px-5 my-5
 									  bg-sky-300/15 hover:bg-sky-400/15 hover:drop-shadow-2xl">
-									<h3 className="text-xl text-blue-600 tracking-wider font-semibold mb-5"> Transaction System</h3>
+									<h3 className="text-xl text-sky-800 tracking-wider font-semibold mb-5"> Transaction System</h3>
 									<p className="text-md">In this project, I implemented a transaction system where employees can input customer purchases. This system updates the database with the relevant information, ensuring accurate and real-time tracking of transactions. </p>
 									<ul className="flex mt-5 text-blue-600">
 										<li>
