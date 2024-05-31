@@ -55,14 +55,14 @@ export default async function Home() {
 							<h2 className="text-3xl mt-14 tracking-wider font-sans font-semibold">Introduction</h2>
 							<p className="pt-10 text-sky-700 font-medium">Welcome to my Portfolio. Here you can find my story.</p>
 							<p className="text-base pt-5">
-								I will complete my diploma in Digital Media and IT - Computer Software Development Concentration
+								I will obtain my diploma in Digital Media and IT - Computer Software Development Concentration
 								from Northern Alberta Institute of Technology (NAIT) in December 2024. My passion lies in C#, and I've grounded
 								my skills in this programming language and framework throughout my studies. I have worked with Blazor web application.
 								As shown by my project Transaction System. Additionally, I've expanded my skill set by acquiring basic proficiency in
 								JavaScript and familiarity with Java. In terms of design, I am experienced in CSS and have utilized frameworks like
 								Tailwind and Bootstrap to create visually appealing and responsive UI. I have a solid understanding of database management,
 								with experience in SQL and Linqpad.</p>
-							<p className="text-base pt-5 pb-2">In my previous career, I worked in banking, with my last role being a Financial Advisor. I held various positions over time, each contributing to my diverse skill set. Those roles helped me accumulate the following skills:
+							<p className="text-base pt-5 pb-2">In my previous career, I worked in banking, with my last role being a Financial Advisor. I have advanced into various positions over time, each contributing to my diverse skill set. Those roles helped me accumulate the following skills:
 							</p>
 							<ul className="text-base list-disc pl-8 pb-2">
 								<li>Develop team effectiveness</li>
@@ -70,7 +70,7 @@ export default async function Home() {
 								<li>Attentiveness to details</li>
 								<li>Effective communication skills</li>
 							</ul>
-							<p className="text-base"><span className="italic ">Then, I discovered my passion for coding and inspired me to return to school and pursue this new path. </span>
+							<p className="text-base"><span className="italic ">Then, I discovered my passion for coding and it inspired me to pursue a new path. </span>
 								My prior experience has equipped me with invaluable skills that I believe are transferable to the field of software development.</p>
 						</div>
 					</div>
