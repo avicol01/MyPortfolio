@@ -20,11 +20,12 @@ export default async function Home() {
 								<a href="#intro" className="">Introduction</a>
 							</li>
 							<li className="py-6 nav-text underline underline-offset-4 hover:text-slate-700 hover:font-bold">
-								<a href="#project" className="">My Projects</a>
+								<a href="#skills" className="">Technical Skills</a>
 							</li>
 							<li className="py-6 nav-text underline underline-offset-4 hover:text-slate-700 hover:font-bold">
-								<a href="#project" className="">My Skills</a>
+								<a href="#project" className="">My Projects</a>
 							</li>
+
 						</ul>
 						<ul className="text-slate-500 my-[3rem] flex">
 							<li className="pr-6">
@@ -51,32 +52,110 @@ export default async function Home() {
 								height={100}
 							/>
 						</Anchor>
-						<div id="intro" className="text-slate-700/90 text-lg px-10">
+						<div id="intro" className="text-slate-800 text-xl px-10">
 							<h2 className="text-3xl mt-14 tracking-wider font-sans font-semibold">Introduction</h2>
 							<p className="pt-10 text-sky-700 font-medium">Welcome to my Portfolio. Here you can find my story.</p>
 							<p className="text-base pt-5">
-								I will obtain my diploma in Digital Media and IT - Computer Software Development Concentration
-								from Northern Alberta Institute of Technology (NAIT) in December 2024. My passion lies in C#, and I've grounded
-								my skills in this programming language and framework throughout my studies. I have worked with Blazor web application.
-								As shown by my project Transaction System. Additionally, I've expanded my skill set by acquiring basic proficiency in
-								JavaScript and familiarity with Java. In terms of design, I am experienced in CSS and have utilized frameworks like
-								Tailwind and Bootstrap to create visually appealing and responsive UI. I have a solid understanding of database management,
-								with experience in SQL and Linqpad.</p>
-							<p className="text-base pt-5 pb-2">In my previous career, I worked in banking, with my last role being a Financial Advisor. I have advanced into various positions over time, each contributing to my diverse skill set. Those roles helped me accumulate the following skills:
+								As a recent graduate from NAIT (Northern Alberta Institute of Technology), I have earned my diploma in Digital Media and IT - with focus on Computer Software Development. This comprehensive two-year program trained me as a full stack developer, allowing me to design and implement complete web applications from the ground up.
+								I have built a strong proficiency in JavaScript within the SvelteKit framework, which I applied in my recent project. C# and Blazor are valuable parts of my skillset, as demonstrated in my Transaction System project.
+								I have learned backend technologies like Supabase, Firebase, and SQL complemented by LinqPad for efficient querying LinqPad.
+								On the design side, I enjoy working with CSS and frameworks like Tailwind and Bootstrap to create responsive, user-friendly interfaces.
+								I'm always keen to learn new tools and frameworks, refining my skills and staying current in the ever-growing field of software development.
+							</p>
+							<p className="text-base pt-5 pb-2">In my previous career, as my last role being a Financial Advisor in banking. I have advanced into various positions over time in the banking industry, each contributing to my diverse skill set. Those roles helped me accumulate the following skills:
 							</p>
 							<ul className="text-base list-disc pl-8 pb-2">
-								<li>Develop team effectiveness</li>
+								<li>Develop team efficiency</li>
 								<li>Analytical thinking</li>
 								<li>Attentiveness to details</li>
 								<li>Effective communication skills</li>
 							</ul>
-							<p className="text-base"><span className="italic ">Then, I discovered my passion for coding and it inspired me to pursue a new path. </span>
+							<p className="text-base"><span className="italic text-lg">Then, I discovered my passion for coding and it inspired me to pursue a new path. </span>
 								My prior experience has equipped me with invaluable skills that I believe are transferable to the field of software development.</p>
 						</div>
 					</div>
+					<div id="skills" className='px-10'>
+						<h2 className="text-3xl mt-20 mb-6 tracking-wider font-sans font-semibold">Technical Skills</h2>
+
+						<h3 className="text-xl mb-4 tracking-wider font-sans font-semibold">Programming Languages:</h3>
+
+						<ul className='flex flex-wrap mb-4'>
+							<li>
+								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-s font-medium leading-5 mr-3 mb-3">JavaScript</div>
+							</li>
+							<li>
+								<div className=" items-center rounded-lg bg-blue-300/55 px-4 py-2 text-s font-medium leading-5 mr-3 mb-3">C#</div>
+							</li>
+							<li>
+								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-s font-medium leading-5 mr-3 mb-3">Java</div>
+							</li>
+							<li>
+								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-s font-medium leading-5 mr-3 mb-3">HTLM & CSS</div>
+							</li>
+						</ul>
+						<h3 className="text-xl mb-4 tracking-wider font-sans font-semibold"> Frameworks:</h3>
+						<ul className='flex flex-wrap mb-4'>
+							<li>
+								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-s font-medium leading-5 mr-3 mb-3">SvelteKit</div>
+							</li>
+							<li>
+								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-s font-medium leading-5 mr-3 mb-3">Blazor</div>
+							</li>
+							<li>
+								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-s font-medium leading-5 mr-3 mb-3">Next.js</div>
+							</li>
+						</ul>
+						<h3 className="text-xl mb-4 tracking-wider font-sans font-semibold"> UI Libraries:</h3>
+						<ul className='flex flex-wrap mb-4'>
+							<li>
+								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-s font-medium leading-5 mr-3 mb-3">Tailwind CSS</div>
+							</li>
+							<li>
+								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-s font-medium leading-5 mr-3 mb-3">Bootstrap</div>
+							</li>
+						</ul>
+
+						<h3 className="text-xl mb-4 tracking-wider font-sans font-semibold"> Database:</h3>
+						<ul className='flex flex-wrap mb-4'>
+							<li>
+								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-s font-medium leading-5 mr-3 mb-3">Supabase</div>
+							</li>
+							<li>
+								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-s font-medium leading-5 mr-3 mb-3">Firebase</div>
+							</li>
+							<li>
+								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-s font-medium leading-5 mr-3 mb-3">SQL</div>
+							</li>
+						</ul>
+						<h3 className="text-xl mb-4 tracking-wider font-sans font-semibold">Tools:</h3>
+						<ul className='flex flex-wrap mb-4'>
+							<li>
+								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-s font-medium leading-5 mr-3 mb-3">LinqPad</div>
+							</li>
+
+						</ul>
+						<h3 className="text-xl mb-4 tracking-wider font-sans font-semibold">Version Control:</h3>
+						<ul className='flex flex-wrap mb-4'>
+							<li>
+								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-s font-medium leading-5 mr-3 mb-3">GitHub</div>
+							</li>
+						</ul>
+						<h3 className="text-xl mb-4 tracking-wider font-sans font-semibold">Oparating Systems:</h3>
+						<ul className='flex flex-wrap mb-8'>
+							<li>
+								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-s font-medium leading-5 mr-3 mb-3">Windows</div>
+							</li>
+							<li>
+								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-s font-medium leading-5 mr-3 mb-3">MAC IOS</div>
+							</li>
+							<li>
+								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-s font-medium leading-5 mr-3 mb-3">Ubuntu</div>
+							</li>
+						</ul>
+					</div>
 					{/* projects*/}
-					<div className="text-slate-600/90 mt-[4rem] px-5">
-						<h2 id="project" className="text-3xl mt-14 tracking-wider font-sans font-semibold px-5">My Projects</h2>
+					<div className="text-slate-600/90 mt-[4rem] px-10">
+						<h2 id="project" className="text-3xl mt-14 tracking-wider font-sans font-semibold ">My Projects</h2>
 						<Anchor
 							href="/demo">
 							<AnchorLabel>
@@ -103,7 +182,35 @@ export default async function Home() {
 							</AnchorLabel>
 						</Anchor>
 
+
+
+						<Anchor
+							href="/demo">
+							<AnchorLabel>
+								<div className="border border-sky-950/10 rounded-lg shadow-xl py-10 px-5 my-5
+									  bg-sky-300/15 hover:bg-sky-400/15 hover:drop-shadow-2xl">
+									<h3 className="text-xl text-sky-800 tracking-wider font-semibold mb-5"> Transaction System</h3>
+									<p className="text-md">In this project, I implemented a transaction system where employees can input customer purchases. This system updates the database with the relevant information, ensuring accurate and real-time tracking of transactions. </p>
+									<ul className="flex mt-5 text-blue-600">
+										<li>
+											<div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-s font-medium leading-5 mr-3 ">C#</div>
+										</li>
+										<li>
+											<div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-s font-medium leading-5 mr-3 ">Blazor</div>
+										</li>
+										<li>
+											<div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-s font-medium leading-5 mr-3 ">Bootstrap</div>
+										</li>
+										<li>
+											<div className="flex items-center rounded-full bg-teal-400/10 px-4 py-2 text-s font-medium leading-5 ">LinqPad 8</div>
+										</li>
+									</ul>
+
+								</div>
+							</AnchorLabel>
+						</Anchor>
 					</div>
+
 
 
 				</main>
