@@ -72,10 +72,8 @@ export default async function Home() {
 						</div>
 					</div>
 					<div id="skills" className='px-10'>
-						<h2 className="text-3xl mt-20 mb-6 tracking-wider font-sans font-semibold">Technical Skills</h2>
-
+						<h2 className="text-3xl mt-20 mb-6 tracking-wider font-sans font-semibold text-slate-800">Technical Skills</h2>
 						<h3 className="text-xl mb-3 tracking-wider font-sans font-semibold">Programming Languages:</h3>
-
 						<ul className='flex flex-wrap mb-4 border-b border-gray-400 '>
 							<li>
 								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-sm font-medium leading-5 mr-3 mb-2">JavaScript</div>
@@ -159,7 +157,7 @@ export default async function Home() {
 					</div>
 					{/* projects*/}
 					<div className=" mt-[4rem] px-10">
-						<h2 id="project" className="text-3xl mt-20 mb-6 tracking-wider font-sans font-semibold">My Projects</h2>
+						<h2 id="project" className="text-3xl mt-20 mb-6 tracking-wider font-sans font-semibold text-slate-800">My Projects</h2>
 						<Anchor
 							href="/demo">
 							<AnchorLabel>
