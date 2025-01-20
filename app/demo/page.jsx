@@ -16,14 +16,14 @@ async function DemoPage({ children }) {
         <div className="relative flex justify-between  ml-5">
           <h2 className="text-3xl text-slate-900 mt-10">Transaction System </h2>
           <Anchor
-							href="/">
-          <Image className="absolute top-0 right-0 mr-10 mb-10"
-								src={logo}
-								alt="logo"
-								width={100}
-								height={100}
-							/>
-              </Anchor>
+            href="/">
+            <Image className="absolute top-0 right-0 mr-10 mb-10"
+              src={logo}
+              alt="logo"
+              width={100}
+              height={100}
+            />
+          </Anchor>
         </div>
       </header>
       <main className="container mx-auto max-w-screen-xl">
@@ -94,11 +94,11 @@ async function DemoPage({ children }) {
 
             {/* <!-- Refresh --> */}
             <li className="sm:flex border border-gray-300 p-4 my-2 rounded-lg space-y-2">
-            <div className="flex items-center w-40">
-              <button className="bg-transparent hover:bg-blue-500 text-blue-600 font-semibold hover:text-white
+              <div className="flex items-center w-40">
+                <button className="bg-transparent hover:bg-blue-500 text-blue-600 font-semibold hover:text-white
                                 py-2 px-4 my-2 mx-4 border-2 border-blue-400 hover:border-transparent rounded h-12 shrink-0">
-                Refresh
-              </button>
+                  Refresh
+                </button>
               </div>
               <ul className="px-10 list-disc">
                 <li>Update quantity.</li>
@@ -107,10 +107,10 @@ async function DemoPage({ children }) {
             </li>
             {/* <!-- Remove --> */}
             <li className="sm:flex border border-gray-300 p-4 my-2 rounded-lg space-y-2">
-            <div className="flex items-center w-40">
-              <button className="bg-transparent hover:bg-gray-300 text-gray-500 font-semibold py-2 px-4 my-2 mx-4 border-2 h-12 border-gray-300 rounded">
-                Remove
-              </button>
+              <div className="flex items-center w-40">
+                <button className="bg-transparent hover:bg-gray-300 text-gray-500 font-semibold py-2 px-4 my-2 mx-4 border-2 h-12 border-gray-300 rounded">
+                  Remove
+                </button>
               </div>
               <ul className="px-10 list-disc">
                 <li>Remove single item from cart.</li>
@@ -118,10 +118,10 @@ async function DemoPage({ children }) {
             </li>
             {/* <!-- Cancel --> */}
             <li className="sm:flex border border-gray-300 p-4 my-2 rounded-lg space-y-2">
-            <div className="flex items-center w-40">
-              <button className="bg-transparent hover:bg-red-500 text-red-600 font-semibold hover:text-white py-2 px-4 my-2 h-12 mx-4 border border-red-500 hover:border-transparent rounded shrink-0">
-                Cancel
-              </button>
+              <div className="flex items-center w-40">
+                <button className="bg-transparent hover:bg-red-500 text-red-600 font-semibold hover:text-white py-2 px-4 my-2 h-12 mx-4 border border-red-500 hover:border-transparent rounded shrink-0">
+                  Cancel
+                </button>
               </div>
               <ul className="px-10 list-disc">
                 <li>Clears all inputs and resets form.</li>
@@ -129,7 +129,7 @@ async function DemoPage({ children }) {
             </li>
             {/* <!-- Verify Coupon --> */}
             <li className="sm:flex border border-gray-300 p-4 my-2 rounded-lg space-y-2">
-              
+
               <button className="bg-transparent hover:bg-gray-300 text-gray-500 font-semibold py-2 px-4 my-2 mx-4 border-2 h-12 border-gray-300 rounded shrink-0">
                 Verify Coupon
               </button>
@@ -142,10 +142,10 @@ async function DemoPage({ children }) {
 
             {/* <!-- Checkout --> */}
             <li className="sm:flex border border-gray-300 p-4 rounded-lg space-y-2">
-            <div className="flex items-center w-40">
-              <button className="bg-green-700 hover:bg-green-600 text-white font-semibold py-2 px-4 my-2 mx-4 rounded h-12 shrink-0">
-                Checkout
-              </button>
+              <div className="flex items-center w-40">
+                <button className="bg-green-700 hover:bg-green-600 text-white font-semibold py-2 px-4 my-2 mx-4 rounded h-12 shrink-0">
+                  Checkout
+                </button>
               </div>
               <ul className="px-10 list-disc">
                 <li>Create a sale with the items in database from shopping cart data.</li>
