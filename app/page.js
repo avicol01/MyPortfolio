@@ -103,8 +103,11 @@ export default async function Home() {
 								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-sm font-medium leading-5 mr-3 mb-2">Next.js</div>
 							</li>
 						</ul>
-						<h3 className="text-xl mb-3 tracking-wider font-sans font-semibold"> UI Libraries:</h3>
+						<h3 className="text-xl mb-3 tracking-wider font-sans font-semibold">Libraries:</h3>
 						<ul className='flex flex-wrap mb-4 border-b border-gray-400 '>
+							<li>
+								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-sm font-medium leading-5 mr-3 mb-2">React</div>
+							</li>
 							<li>
 								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-sm font-medium leading-5 mr-3 mb-2">Tailwind CSS</div>
 							</li>
