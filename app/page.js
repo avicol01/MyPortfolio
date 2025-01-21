@@ -59,7 +59,7 @@ export default async function Home() {
 								As a recent graduate from NAIT (Northern Alberta Institute of Technology), I have earned my diploma in Digital Media and IT - with focus on Computer Software Development. This comprehensive two-year program trained me as a full stack developer, allowing me to design and implement complete web applications from the ground up.
 								I'm always keen to learn new tools and frameworks, refining my skills and staying current in the ever-growing field of software development. Please see my technical skills section to view the complete list of my competencies.
 							</p>
-							<p className="text-base pt-5 pb-2">In my previous career, as my last role being a Financial Advisor in banking. I have advanced into various positions over time in the banking industry, each contributing to my diverse skill set. Those roles helped me accumulate the following skills:
+							<p className="text-base pt-5 pb-2">In my previous career, my last role being a Financial Advisor in banking. I have advanced into various positions over time in the banking industry, each contributing to my diverse skill set. Those roles helped me accumulate the following skills:
 							</p>
 							<ul className="text-base list-disc pl-8 pb-2">
 								<li>Develop team efficiency</li>
@@ -88,7 +88,7 @@ export default async function Home() {
 								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-sm font-medium leading-5 mr-3 mb-2">Java</div>
 							</li>
 							<li>
-								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-sm font-medium leading-5 mr-3 mb-2">HTLM & CSS</div>
+								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-sm font-medium leading-5 mr-3 mb-2">HTML & CSS</div>
 							</li>
 						</ul>
 						<h3 className="text-xl mb-3 tracking-wider font-sans font-semibold"> Frameworks:</h3>
@@ -142,7 +142,7 @@ export default async function Home() {
 							</li>
 						</ul>
 
-						<h3 className="text-xl mb-3 tracking-wider font-sans font-semibold">Oparating Systems:</h3>
+						<h3 className="text-xl mb-3 tracking-wider font-sans font-semibold">Operating Systems:</h3>
 						<ul className='flex flex-wrap mb-8 border-b border-gray-400' >
 							<li>
 								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-sm font-medium leading-5 mr-3 mb-2">Windows</div>
