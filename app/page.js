@@ -1,7 +1,8 @@
-import Link from 'next/link';
-import { Anchor, AnchorLabel } from '@/components/anchor/Anchor'
+import { Anchor } from '@/components/anchor/Anchor'
 import Image from "next/image";
 import logo from "/images/AVogT.png";
+import Skills from '@/components/skills/Skills';
+import Projects from '@/components/projects/projects';
 
 export default async function Home() {
 	return (
@@ -24,6 +25,9 @@ export default async function Home() {
 							</li>
 							<li className="py-6 nav-text underline underline-offset-4 hover:text-slate-700 hover:font-bold">
 								<a href="#project" className="">My Projects</a>
+							</li>
+							<li className="py-6 nav-text underline underline-offset-4 hover:text-slate-700 hover:font-bold">
+								<a href="#contact" className="">Contact</a>
 							</li>
 
 						</ul>
@@ -71,170 +75,15 @@ export default async function Home() {
 								My prior experience has equipped me with invaluable skills that I believe are transferable to the field of software development.</p>
 						</div>
 					</div>
+
+					{/* skills */}
 					<div id="skills" className='px-10'>
-						<h2 className="text-3xl mt-20 mb-6 tracking-wider font-sans font-semibold text-slate-800">Technical Skills</h2>
-						<h3 className="text-xl mb-3 tracking-wider font-sans font-semibold">Programming Languages:</h3>
-						<ul className='flex flex-wrap mb-4 border-b border-gray-400 '>
-							<li>
-								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-sm font-medium leading-5 mr-3 mb-2">JavaScript</div>
-							</li>
-							<li>
-								<div className=" items-center rounded-lg bg-blue-300/55 px-4 py-2 text-sm font-medium leading-5 mr-3 mb-2">Svelte</div>
-							</li>
-							<li>
-								<div className=" items-center rounded-lg bg-blue-300/55 px-4 py-2 text-sm font-medium leading-5 mr-3 mb-2">C#</div>
-							</li>
-							<li>
-								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-sm font-medium leading-5 mr-3 mb-2">Java</div>
-							</li>
-							<li>
-								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-sm font-medium leading-5 mr-3 mb-2">HTML & CSS</div>
-							</li>
-						</ul>
-						<h3 className="text-xl mb-3 tracking-wider font-sans font-semibold"> Frameworks:</h3>
-						<ul className='flex flex-wrap mb-4 border-b border-gray-400 '>
-							<li>
-								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-sm font-medium leading-5 mr-3 mb-2">SvelteKit</div>
-							</li>
-							<li>
-								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-sm font-medium leading-5 mr-3 mb-2">Blazor</div>
-							</li>
-							<li>
-								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-sm font-medium leading-5 mr-3 mb-2">Next.js</div>
-							</li>
-						</ul>
-						<h3 className="text-xl mb-3 tracking-wider font-sans font-semibold">Libraries:</h3>
-						<ul className='flex flex-wrap mb-4 border-b border-gray-400 '>
-							<li>
-								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-sm font-medium leading-5 mr-3 mb-2">React</div>
-							</li>
-							<li>
-								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-sm font-medium leading-5 mr-3 mb-2">Tailwind CSS</div>
-							</li>
-							<li>
-								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-sm font-medium leading-5 mr-3 mb-2">Bootstrap</div>
-							</li>
-						</ul>
-
-						<h3 className="text-xl mb-3 tracking-wider font-sans font-semibold"> Database:</h3>
-						<ul className='flex flex-wrap mb-4 border-b border-gray-400 '>
-							<li>
-								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-sm font-medium leading-5 mr-3 mb-2">Supabase</div>
-							</li>
-							<li>
-								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-sm font-medium leading-5 mr-3 mb-2">Firebase</div>
-							</li>
-							<li>
-								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-sm font-medium leading-5 mr-3 mb-2">SQL</div>
-							</li>
-						</ul>
-						<h3 className="text-xl mb-3 tracking-wider font-sans font-semibold">Tools:</h3>
-						<ul className='flex flex-wrap mb-4 border-b border-gray-400 '>
-							<li>
-								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-sm font-medium leading-5 mr-3 mb-2">Swagger UI</div>
-							</li>
-							<li>
-								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-sm font-medium leading-5 mr-3 mb-2">LinqPad</div>
-							</li>
-							<li>
-								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-sm font-medium leading-5 mr-3 mb-2">Trello</div>
-							</li>
-
-						</ul>
-						<h3 className="text-xl mb-3 tracking-wider font-sans font-semibold">Version Control:</h3>
-						<ul className='flex flex-wrap mb-4 border-b border-gray-400 '>
-							<li>
-								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-sm font-medium leading-5 mr-3 mb-2">GitHub</div>
-							</li>
-						</ul>
-
-						<h3 className="text-xl mb-3 tracking-wider font-sans font-semibold">Operating Systems:</h3>
-						<ul className='flex flex-wrap mb-8 border-b border-gray-400' >
-							<li>
-								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-sm font-medium leading-5 mr-3 mb-2">Windows</div>
-							</li>
-							<li>
-								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-sm font-medium leading-5 mr-3 mb-2">MAC IOS</div>
-							</li>
-							<li>
-								<div className="items-center rounded-lg bg-blue-300/55 px-4 py-2 text-sm font-medium leading-5 mr-3 mb-2">Ubuntu</div>
-							</li>
-						</ul>
+						<Skills />
 					</div>
+
 					{/* projects*/}
-					<div className=" mt-[4rem] px-10">
-						<h2 id="project" className="text-3xl mt-20 mb-6 tracking-wider font-sans font-semibold text-slate-800">My Projects</h2>
-						<Anchor
-							href="/demo">
-							<AnchorLabel>
-								<div className="border border-sky-950/10 rounded-sm shadow-md py-10 px-5 mb-8
-									  bg-sky-300/15 hover:bg-sky-400/15 hover:drop-shadow-2xl">
-									<h3 className="text-xl text-sky-900 tracking-wider font-semibold mb-5"> Transaction System</h3>
-									<p className="text-md">In this project, I implemented a transaction system where employees can input customer purchases. This system updates the database with the relevant information, ensuring accurate and real-time tracking of transactions. </p>
-									<ul className="flex mt-5 text-blue-600">
-										<li>
-											<div className="flex items-center rounded-lg bg-teal-400/10 px-4 py-2 text-s font-medium leading-5 mr-3 ">C#</div>
-										</li>
-										<li>
-											<div className="flex items-center rounded-lg bg-teal-400/10 px-4 py-2 text-s font-medium leading-5 mr-3 ">Blazor</div>
-										</li>
-										<li>
-											<div className="flex items-center rounded-lg bg-teal-400/10 px-4 py-2 text-s font-medium leading-5 mr-3 ">Bootstrap</div>
-										</li>
-										<li>
-											<div className="flex items-center rounded-lg bg-teal-400/10 px-4 py-2 text-s font-medium leading-5 ">LinqPad 8</div>
-										</li>
-									</ul>
-
-								</div>
-							</AnchorLabel>
-						</Anchor>
-
-						<Anchor
-							href="/demoTwo">
-							<AnchorLabel>
-								<div className="border border-sky-950/10 rounded-sm shadow-md py-10 px-5 mb-8
-									  bg-sky-300/15 hover:bg-sky-400/15 hover:drop-shadow-2xl">
-									<h3 className="text-xl text-sky-800 tracking-wider font-semibold mb-5">Frontend E-Commerce Website</h3>
-									<p className="text-md">This responsive e-commerce front-end website allows users to browse, search, and buy products. The site includes a shopping cart and clear navigation and works well on both desktop and mobile. This project highlights my skills in creating user-friendly designs with modern front-end tools. </p>
-									<ul className="flex mt-5 text-blue-600">
-										<li>
-											<div className="flex items-center rounded-lg bg-teal-400/10 px-4 py-2 text-s font-medium leading-5 mr-3 ">React</div>
-										</li>
-										<li>
-											<div className="flex items-center rounded-lg bg-teal-400/10 px-4 py-2 text-s font-medium leading-5 mr-3 ">Next.js</div>
-										</li>
-										<li>
-											<div className="flex items-center rounded-lg bg-teal-400/10 px-4 py-2 text-s font-medium leading-5 mr-3 ">Tailwind CSS</div>
-										</li>
-
-									</ul>
-								</div>
-							</AnchorLabel>
-						</Anchor>
-
-						<Anchor
-							href="/demoThree">
-							<AnchorLabel>
-								<div className="border border-sky-950/10 rounded-sm shadow-xl py-10 px-5 mb-12 
-									  bg-sky-300/15 hover:bg-sky-400/15 hover:drop-shadow-2xl">
-									<h3 className="text-xl text-sky-800 tracking-wider font-semibold mb-5">ASP.NET Core Web API School Management</h3>
-									<p className="text-md">This project implements a RESTful API using ASP.NET Core Web API .NET 8, demonstrating core CRUD operations and JWT-based authentication. The system is designed to manage basic school information with SQL Server as the backend database. </p>
-									<ul className="flex mt-5 text-blue-600">
-										<li>
-											<div className="flex items-center rounded-lg bg-teal-400/10 px-4 py-2  font-medium leading-5 mr-3 ">C#</div>
-										</li>
-										<li>
-											<div className="flex items-center rounded-lg bg-teal-400/10 px-4 py-2 font-medium leading-5 mr-3 ">SQL</div>
-										</li>
-										<li>
-											<div className="flex items-center rounded-lg bg-teal-400/10 px-4 py-2 font-medium leading-5 mr-3 ">Swagger UI</div>
-										</li>
-
-									</ul>
-								</div>
-							</AnchorLabel>
-						</Anchor>
+					<div id="project" className=" mt-[4rem]">
+						<Projects />
 					</div>
 				</main >
 			</div >
