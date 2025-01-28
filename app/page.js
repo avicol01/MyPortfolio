@@ -27,9 +27,9 @@ export default async function Home() {
 							<li className="py-6 nav-text underline underline-offset-4 hover:text-slate-700 hover:font-bold">
 								<a href="#project" className="">My Projects</a>
 							</li>
-							<li className="py-6 nav-text underline underline-offset-4 hover:text-slate-700 hover:font-bold">
+							{/* <li className="py-6 nav-text underline underline-offset-4 hover:text-slate-700 hover:font-bold">
 								<a href="#contact" className="">Contact</a>
-							</li>
+							</li> */}
 
 						</ul>
 						<ul className="text-slate-500 my-[3rem] flex">
