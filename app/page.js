@@ -3,6 +3,7 @@ import Image from "next/image";
 import logo from "/images/AVogT.png";
 import Skills from '@/components/skills/Skills';
 import Projects from '@/components/projects/projects';
+import ContactForm from '@/components/Contact/contact';
 
 export default async function Home() {
 	return (
@@ -82,9 +83,13 @@ export default async function Home() {
 					</div>
 
 					{/* projects*/}
-					<div id="project" className=" mt-[4rem]">
+					<div id="project" className=" mt-4">
 						<Projects />
 					</div>
+
+					{/* <div id="contact" className=" mt-4 mb-10">
+						<ContactForm />
+					</div> */}
 				</main >
 			</div >
 			{/* </body> */}
