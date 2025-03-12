@@ -15,7 +15,7 @@ export default function Home() {
 	);
 }
 
-// Sidebar menu 
+// Sidebar 
 function Sidebar() {
 	return (
 		<header className="lg:sticky top-0 p-10 grid-cols-1 lg:h-screen flex lg:items-center lg:justify-center">
