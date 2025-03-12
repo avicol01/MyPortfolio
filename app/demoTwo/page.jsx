@@ -4,10 +4,8 @@ import Image from "next/image";
 import logo from "/images/AVogT.png"
 import { Code, ShoppingCart, Search, Lock, Settings, Database } from 'lucide-react';
 
-async function DemoTwoPage({ children }) {
-	// const payload = await getToDoItems()
-	// const tasks = Object.entries(payload.todos).reverse()
 
+async function DemoTwoPage({ children }) {
 	return (
 		<>
 
