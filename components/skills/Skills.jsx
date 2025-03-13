@@ -1,7 +1,7 @@
-// Enhanced individual skill item with hover effects and better visual hierarchy
+// individual skill item 
 const SkillItem = ({ skill }) => (
     <li className="inline-block mb-3 mr-3">
-        <div className="flex items-center rounded-lg bg-gradient-to-r from-blue-400/30 to-sky-400/40 
+        <div className="flex items-center rounded-md bg-gradient-to-r from-blue-400/30 to-sky-400/40 
                     px-4 py-2 text-sm font-medium shadow-sm transition-all duration-300
                     hover:from-blue-500/40 hover:to-sky-500/50 hover:shadow-md
                     border border-blue-200/50">
@@ -10,7 +10,7 @@ const SkillItem = ({ skill }) => (
     </li>
 );
 
-// Improved category component with better spacing
+// Improved category 
 const SkillCategory = ({ title, skills }) => {
     return (
         <div className="mb-3 bg-white/60 rounded-lg p-4 shadow-sm hover:shadow-md transition-all duration-300">
@@ -27,7 +27,7 @@ const SkillCategory = ({ title, skills }) => {
     );
 };
 
-// Main Skills component with improved layout and organization
+// Main Skills component
 const Skills = () => {
     const skillsData = {
         'Programming Languages': ['JavaScript', 'Svelte', 'C#', 'HTML & CSS'],
@@ -41,14 +41,17 @@ const Skills = () => {
     };
 
     return (
-        <div id="skills" className="mt-10">
-            <h2 className="text-3xl tracking-wider font-sans font-semibold text-slate-800 m-3">
-                Technical Skills
-            </h2>
-            <div className="grid md:grid-cols-2 gap-4">
-                {Object.entries(skillsData).map(([category, skills], index) => (
-                    <SkillCategory key={index} title={category} skills={skills} />
-                ))}
+        <div className="py-10">
+            <div id="skills">
+                <h2 className="text-3xl tracking-wider font-sans font-semibold text-slate-800 m-3">
+                    Technical Skills
+                </h2>
+                <div className="h-1 w-24 mt-2 mb-6 bg-gradient-to-r from-blue-400 to-teal-400 rounded-full ml-4"></div>
+                <div className="grid md:grid-cols-2 gap-4">
+                    {Object.entries(skillsData).map(([category, skills], index) => (
+                        <SkillCategory key={index} title={category} skills={skills} />
+                    ))}
+                </div>
             </div>
         </div>
     );

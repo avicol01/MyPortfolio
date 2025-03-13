@@ -112,17 +112,28 @@ function SocialLinks() {
 function MainContent() {
 	return (
 		<main>
-			<div className="relative flex justify-end">
-				<Anchor href="/">
-					<Image
-						className="absolute top-0 right-0 mr-10 mt-5"
-						src={logo}
-						alt="logo"
-						width={100}
-						height={100}
-						priority
-					/>
-				</Anchor>
+			<div className=" px-10">
+
+				<div className="flex items-baseline justify-between mb-2">
+					<div className="my-8">
+						<h2 className="text-3xl font-sans font-semibold tracking-wider text-slate-800">
+							Introduction
+						</h2>
+						<div className="h-1 w-24 mt-2 bg-gradient-to-r from-blue-400 to-teal-400 rounded-full"></div>
+					</div>
+
+
+					<Anchor href="/">
+						<Image
+							src={logo}
+							alt="logo"
+							width={100}
+							height={100}
+							priority
+							className="ml-4"
+						/>
+					</Anchor>
+				</div>
 
 				<IntroductionSection />
 			</div>
