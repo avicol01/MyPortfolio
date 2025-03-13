@@ -167,7 +167,7 @@ async function DemoPage({ children }) {
       <footer className="flex justify-end container mx-auto max-w-screen-xl m-10">
         <Anchor href="/">
           <AnchorLabel className="text-xl font-sans hover:font-mono text-white border bg-slate-500 py-2 px-5 rounded-lg hover:shadow-md">
-            back to main page
+            Main Page
           </AnchorLabel>
         </Anchor>
       </footer>
