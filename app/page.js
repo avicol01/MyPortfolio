@@ -112,7 +112,7 @@ function SocialLinks() {
 function MainContent() {
 	return (
 		<main>
-			<div className="mt-14 px-10">
+			<div className="mt-10 px-10">
 
 				<div className="flex items-baseline justify-between mb-2">
 					<div className="my-8">
