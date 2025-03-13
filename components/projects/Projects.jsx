@@ -54,7 +54,7 @@ const Projects = () => {
 
     return (
         <div className="mt-[4rem] px-10">
-            <h2 id="project" className="text-3xl mt-20 mb-6 tracking-wider font-sans font-semibold text-slate-800">
+            <h2 id="project" className="text-3xl mb-6 tracking-wider font-sans font-semibold text-slate-800">
                 My Projects
             </h2>
             {projectsData.map((project, index) => (

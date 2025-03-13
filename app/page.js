@@ -128,7 +128,7 @@ function MainContent() {
 			</div>
 
 			{/* Skills section */}
-			<section id="skills" className="px-10">
+			<section id="skills" className="m-6">
 				<Skills />
 			</section>
 
